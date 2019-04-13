@@ -15,6 +15,6 @@ rerollButton.addEventListener('click', function() {
     } else if (randomNumber2 > randomNumber1) { 
         h1.innerHTML = 'Player 2 Wins!'
     } else {
-        h1.innerHTML = 'Draw!'
+        h1.innerHTML = 'It\'s a Draw!'
     }
 });

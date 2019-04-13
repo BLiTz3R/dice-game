@@ -35,8 +35,8 @@ img {
   font-family: 'Lobster', cursive;
   border: 0;
   outline: 0;
-  width: 150px;
-  padding: 10px;
+  width: 200px;
+  padding: 30px;
   margin: 5% auto;
   border-radius: 5px;
   display: block;
@@ -45,16 +45,10 @@ img {
   font-size: 1.2em;
   color: #FFF;
   background: #bc3737;
-  -webkit-box-shadow: 0 3px 1px #950d0d;
-  box-shadow: 0 3px 1px #950d0d;
+
 }
 
 .reroll:hover {
   background: #b23737;
-}
-
-.reroll:active {
-  -webkit-box-shadow: 0 1px 1px #950d0d;
-  box-shadow: 0 1px 1px #950d0d;
 }
 
