@@ -1,20 +1,29 @@
-const img1 = document.querySelector('.img1');
-const img2 = document.querySelector('.img2');
-const h1 = document.querySelector('h1');
-const rerollButton = document.querySelector('.reroll');
+const rollButton = document.querySelector('.roll');
+const title = document.querySelector('h1');
 
-rerollButton.addEventListener('click', function () {
-    const randomNumber1 = Math.floor(Math.random() * 6) + 1;
-    const randomNumber2 = Math.floor(Math.random() * 6) + 1;
-
-    img1.setAttribute('src', `images/dice${randomNumber1}.png`);
-    img2.setAttribute('src', `images/dice${randomNumber2}.png`);
-
-    if (randomNumber1 > randomNumber2) {
-        h1.innerHTML = 'Player 1 Wins!'
-    } else if (randomNumber2 > randomNumber1) {
-        h1.innerHTML = 'Player 2 Wins!'
-    } else {
-        h1.innerHTML = 'It\'s a Draw!'
-    }
+rollButton.addEventListener('click', function () {
+    animateRoll();
 });
+
+function animateRoll(rolls) {
+    rolls = rolls || 1;
+
+    const roll1 = Math.floor(Math.random() * 6) + 1;
+    const roll2 = Math.floor(Math.random() * 6) + 1;
+
+    document.querySelector('.img1').setAttribute('src', `images/dice${roll1}.png`);
+    document.querySelector('.img2').setAttribute('src', `images/dice${roll2}.png`);
+
+    if (rolls > 7) {
+
+        if (roll1 > roll2) {
+            title.textContent = '🥇Player 1 Wins!';
+        } else if (roll2 > roll1) {
+            title.textContent = 'Player 2 Wins!🥇';
+        } else {
+            title.textContent = 'It\'s a Draw!';
+        }
+        return;
+    }
+    setTimeout('animateRoll(' + (rolls + 1) + ')', 150);
+}

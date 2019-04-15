@@ -8,7 +8,7 @@ h1 {
   text-shadow: 5px 0 #232931;
   font-size: 8rem;
   color: #4ECCA3;
-  min-height: 100px;
+  min-height: 180px;
 }
 
 p {
@@ -22,8 +22,8 @@ img {
 }
 
 .container {
-  width: 70%;
-  margin: auto;
+  width: 100%;
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -32,7 +32,7 @@ img {
   display: inline-block;
 }
 
-.reroll {
+.roll {
   font-family: 'Lobster', cursive;
   border: 0;
   outline: 0;
@@ -49,7 +49,6 @@ img {
 
 }
 
-.reroll:hover {
+.roll:hover {
   background: #b23737;
 }
-
