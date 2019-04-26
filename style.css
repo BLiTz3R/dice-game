@@ -17,10 +17,6 @@ p {
   color: #4ECCA3;
 }
 
-img {
-  width: 40%;
-}
-
 .container {
   width: 100%;
   margin: 0 auto;
@@ -30,7 +26,11 @@ img {
 .dice {
   text-align: center;
   display: inline-block;
-  width: 40%;
+  width: 20%;
+}
+
+img {
+  width: 80%;
 }
 
 .roll {
@@ -72,13 +72,22 @@ img {
     margin: 10px;
     min-height: 100px;
   }
-  img {
-    width: 60%;
+  p {
+    font-size: 1.2rem;
+  }
+  .roll {
+    font-size: 0.8rem;
   }
 }
 
 @media only screen and (max-width: 398px) {
   h1 {
     font-size: 3rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  .roll {
+    font-size: 0.7rem;
   }
 }
