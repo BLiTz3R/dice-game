@@ -3,12 +3,12 @@ body {
 }
 
 h1 {
-  margin: 30px;
+  margin: 2%;
   font-family: 'Lobster', cursive;
   text-shadow: 5px 0 #232931;
-  font-size: 8rem;
+  font-size: 600%;
   color: #4ECCA3;
-  min-height: 180px;
+  min-height: 200%;
 }
 
 p {
@@ -18,7 +18,7 @@ p {
 }
 
 img {
-  width: 80%;
+  width: 40%;
 }
 
 .container {
@@ -30,20 +30,21 @@ img {
 .dice {
   text-align: center;
   display: inline-block;
+  width: 40%;
 }
 
 .roll {
   font-family: 'Lobster', cursive;
   border: 0;
   outline: 0;
-  width: 200px;
+  width: 20%;
   padding: 30px;
   margin: 5% auto;
   border-radius: 5px;
   display: block;
   text-decoration: none;
   text-align: center;
-  font-size: 1.2em;
+  font-size: 2rem;
   color: #FFF;
   background: #bc3737;
 
@@ -51,4 +52,37 @@ img {
 
 .roll:hover {
   background: #b23737;
+}
+
+@media only screen and (max-width: 719px) {
+  h1 {
+    font-size: 5rem;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+  .roll {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  h1 {
+    font-size: 4rem;
+    margin: 10px;
+    min-height: 100px;
+  }
+  img {
+    width: 60%;
+  }
+  .roll {
+    width: 100px;
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 398px) {
+  h1 {
+    font-size: 3rem;
+  }
 }

@@ -17,9 +17,9 @@ function animateRoll(rolls) {
     if (rolls > 7) {
 
         if (roll1 > roll2) {
-            title.textContent = '🥇Player 1 Wins!';
+            title.textContent = 'Player 1 Wins!';
         } else if (roll2 > roll1) {
-            title.textContent = 'Player 2 Wins!🥇';
+            title.textContent = 'Player 2 Wins!';
         } else {
             title.textContent = 'It\'s a Draw!';
         }
